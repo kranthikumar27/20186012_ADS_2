@@ -4,8 +4,8 @@ import java.util.Scanner;
  */
 class GraphList {
 	/**
-     * variable declaration.
-     */
+	 * variable declaration.
+	 */
 	private int v;
 	/**
 	 * variable declaration.
@@ -104,35 +104,41 @@ class GraphList {
 	public String toString() {
 		StringBuilder s = new StringBuilder();
 		s.append(v + " vertices, " + e + " edges " + "\n");
-		for (int i = 0; i < v; i++) {
-			s.append(i + ": ");
-			for (int j : adj[i]) {
-				s.append(j + " ");
+		if (e > 0) {
+			for (int i = 0; i < v; i++) {
+				s.append(i + ": ");
+				for (int j : adj[i]) {
+					s.append(j + " ");
+				}
+				s.append("\n");
 			}
-			s.append("\n");
+			return s.toString();
+		} else {
+			s.append("No edges");
+			return s.toString();
 		}
-		return s.toString();
 	}
+
 }
 /**
  * Class for graph matrix.
  */
 class GraphMatrix {
 	/**
-     * array declaration.
-     */
+	 * array declaration.
+	 */
 	private String[] tokens;
 	/**
-     * 2d array declaration.
-     */
+	 * 2d array declaration.
+	 */
 	private int[][] matrix;
 	/**
-     * variable declaration.
-     */
+	 * variable declaration.
+	 */
 	private int e;
 	/**
-     * variable declaration.
-     */
+	 * variable declaration.
+	 */
 	private int v;
 	/**
 	 * Constructs the object.
@@ -156,26 +162,28 @@ class GraphMatrix {
 		}
 	}
 	/**
-     * Adds an edge.
-     *
-     * @param      v1    the int.
-     * @param      w1    the int.
-     */
+	 * Adds an edge.
+	 *
+	 * @param      v1    the int.
+	 * @param      w1    the int.
+	 */
 	public void addEdge(final int v1, final int w1) {
-		if (!hasEdge(v1, w1)) {
-			matrix[v1][w1] = 1;
-			matrix[w1][v1] = 1;
-			e++;
+		if (v1 != w1) {
+			if (!hasEdge(v1, w1)) {
+				matrix[v1][w1] = 1;
+				matrix[w1][v1] = 1;
+				e++;
+			}
 		}
 	}
 	/**
-     * Determines if it has edge.
-     *
-     * @param      v1    the int.
-     * @param      w1    the int.
-     *
-     * @return     True if has edge, False otherwise.
-     */
+	 * Determines if it has edge.
+	 *
+	 * @param      v1    the int.
+	 * @param      w1    the int.
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
 	public boolean hasEdge(final int v1, final int w1) {
 		if (matrix[v1][w1] == 1) {
 			return true;
@@ -183,8 +191,8 @@ class GraphMatrix {
 		return false;
 	}
 	/**
-     * display method.
-     */
+	 * display method.
+	 */
 	public void print() {
 		String str = "";
 		str += v + " vertices, " + e + " edges" + "\n";
@@ -205,7 +213,7 @@ class GraphMatrix {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 	/**
 	 * Constructs the object.
 	 */
@@ -217,7 +225,7 @@ public class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String type = scan.nextLine();
 		switch (type) {
