@@ -125,9 +125,6 @@ class GraphList {
 /**
  * Class for graph matrix.
  */
-/**
- * Class for graph matrix.
- */
 class GraphMatrix {
     /**
      * array declaration.
@@ -240,7 +237,7 @@ public final class Solution {
 			break;
 		case "Matrix":
 			GraphMatrix objmatrix = new GraphMatrix(scan);
-			System.out.println(objmatrix);
+			objmatrix.print();
 			break;
 		default:
 			break;
