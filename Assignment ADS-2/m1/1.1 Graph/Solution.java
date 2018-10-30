@@ -109,9 +109,9 @@ class GraphList {
 		s.append(v + " vertices, " + e + " edges " + "\n");
 		if (e > 0) {
 			for (int i = 0; i < v; i++) {
-				s.append(i + ": ");
+				s.append(tokens[i] + ": ");
 				for (int j : adj[i]) {
-					s.append(j + " ");
+					s.append(tokens[j] + " ");
 				}
 				s.append("\n");
 			}
