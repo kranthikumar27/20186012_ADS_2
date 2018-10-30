@@ -1,30 +1,30 @@
 import java.util.Scanner;
-/**
+/**.
  * List of graphs.
  */
 class GraphList {
-    /**
+    /**.
      * variable declaration.
      */
     private int v;
-    /**
+    /**.
      * variable declaration.
      */
     private int e;
-    /**
+    /**.
      * array declaration.
      */
     private Bag<Integer>[] adj;
-    /**
+    /**.
      * array declaration.
      */
     private String[] tokens;
-    /**
+    /**.
      * Constructs the object.
      */
     GraphList() {
     }
-    /**
+    /**.
      * Constructs the object.
      *
      * @param      scan  The scan
@@ -43,7 +43,7 @@ class GraphList {
                     Integer.parseInt(inputs[1]));
         }
     }
-    /**
+    /**.
      * method for vertices.
      *
      * @return  vertices.
@@ -51,7 +51,7 @@ class GraphList {
     public int v() {
         return v;
     }
-    /**
+    /**.
      * method for edges.
      *
      * @return edges.
@@ -59,14 +59,14 @@ class GraphList {
     public int e() {
         return e;
     }
-    /**
+    /**.
      * Adds an edge.
      *
      * @param      v1    the int.
      * @param      w1    the int.
      */
     public void addEdge(final int v1, final int w1) {
-        if(v1 == w1) {
+        if (v1 == w1) {
             return;
         }
         if (v1 != w1) {
@@ -78,7 +78,7 @@ class GraphList {
         }
 
     }
-    /**
+    /**.
      * method for adjacent vertex.
      *
      * @param      v1    the int.
@@ -88,7 +88,7 @@ class GraphList {
     public Iterable<Integer> adj(final int v1) {
         return adj[v1];
     }
-    /**
+    /**.
      * Determines if it has edge.
      *
      * @param      v1    the int.
@@ -99,7 +99,7 @@ class GraphList {
     public boolean hasEdge(final int v1, final int w1) {
         return true;
     }
-    /**
+    /**.
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
@@ -122,33 +122,33 @@ class GraphList {
         }
     }
 }
-/**
+/**.
  * Class for graph matrix.
  */
 class GraphMatrix {
-    /**
+    /**.
      * array declaration.
      */
     private String[] tokens;
-    /**
+    /**.
      * 2d array declaration.
      */
     private int[][] matrix;
-    /**
+    /**.
      * variable declaration.
      */
     private int v;
-    /**
+    /**.
      * variable declaration.
      */
     private int e;
-    /**
+    /**.
      * Constructs the object.
      */
     GraphMatrix() {
         e = 0;
     }
-    /**
+    /**.
      * Constructs the object.
      *
      * @param      scan  The scan
@@ -163,7 +163,7 @@ class GraphMatrix {
             addEdge(Integer.parseInt(inputs[0]), Integer.parseInt(inputs[1]));
         }
     }
-    /**
+    /**.
      * Adds an edge.
      *
      * @param      v1    the int.
@@ -178,7 +178,7 @@ class GraphMatrix {
             }
         }
     }
-    /**
+    /**.
      * Determines if it has edge.
      *
      * @param      v1    the int.
@@ -192,7 +192,7 @@ class GraphMatrix {
         }
         return false;
     }
-    /**
+    /**.
      * display method.
      */
     public void print() {
@@ -212,35 +212,35 @@ class GraphMatrix {
         }
     }
 }
-/**
+/**.
  * Class for solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	Solution() {
+    /**.
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	/**
-	 * { function_description }
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner scan = new Scanner(System.in);
-		String type = scan.nextLine();
-		switch (type) {
-		case "List":
-			GraphList objlist = new GraphList(scan);
-			System.out.println(objlist);
-			break;
-		case "Matrix":
-			GraphMatrix objmatrix = new GraphMatrix(scan);
-			objmatrix.print();
-			break;
-		default:
-			break;
-		}
-	}
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String type = scan.nextLine();
+        switch (type) {
+        case "List":
+            GraphList objlist = new GraphList(scan);
+            System.out.println(objlist);
+            break;
+        case "Matrix":
+            GraphMatrix objmatrix = new GraphMatrix(scan);
+            objmatrix.print();
+            break;
+        default:
+            break;
+        }
+    }
 }

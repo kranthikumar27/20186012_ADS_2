@@ -31,9 +31,5 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m1\1.1 Graph\Solution.java:69:11: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m1\1.1 Graph\Solution.java:218:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m1\1.1 Graph\Solution.java:219:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m1\1.1 Graph\Solution.java:225: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
