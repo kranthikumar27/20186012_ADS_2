@@ -1,0 +1,40 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+Graph is bipartite
+
+Your Output: 
+Graph is Bipartite
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+Graph is bipartite
+
+Your Output: 
+Graph is Bipartite
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+Graph is bipartite
+
+Your Output: 
+Graph is Bipartite
+----------------------------------------
+
+########## Testcase 3: Passed ##########
+Expected Output: 
+Graph is not a bipartite
+
+Your Output: 
+Graph is not a bipartite
+----------------------------------------
+
+########## Testcase 4: Passed ##########
+Expected Output: 
+Graph is not a bipartite
+
+Your Output: 
+Graph is not a bipartite
+----------------------------------------
+
