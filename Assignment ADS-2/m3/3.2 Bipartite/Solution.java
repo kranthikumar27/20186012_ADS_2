@@ -26,7 +26,7 @@ class Solution {
 		}
 		DirectedCycle objdc = new DirectedCycle(objgraph);
         if (objdc.isBipartite()) {
-            System.out.println("Graph is Bipartite");
+            System.out.println("Graph is bipartite");
         } else {
             System.out.println("Graph is not a bipartite");
         }
