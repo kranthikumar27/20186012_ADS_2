@@ -1,16 +1,15 @@
-import java.util.NoSuchElementException;
 /**
  * Class for digraph.
  */
-class Digraph {
+public class Digraph {
     /**
-     * {number of vertices in  digraph}.
+     * {number of vertices in this digraph}.
      */
-    private final int V;
+    private final int vertices;
     /**
-     * {number of edges in  digraph}.
+     * {number of edges in this digraph}.
      */
-    private int E;
+    private int edges;
     /**
      * {adj[v] = adjacency list for vertex v}.
      */
@@ -21,31 +20,32 @@ class Digraph {
     private int[] indegree;
 
     /**
-     * Initializes an empty digraph with <em>V</em> vertices.
+     * Initializes an empty digraph with <em>v</em> vertices.
      *
-     * @param  V the number of vertices
-     * @throws IllegalArgumentException if {@code V < 0}
+     * @param  v the number of vertices
+     * @throws IllegalArgumentException if {@code v < 0}
      */
-    public Digraph(int V) {
-        if (V < 0) {
+    public Digraph(final int v) {
+        if (v < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices in a Digraph must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
+        this.vertices = v;
+        this.edges = 0;
+        indegree = new int[vertices];
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Integer>();
         }
     }
+
     /**
      * Returns the number of vertices in this digraph.
      *
      * @return the number of vertices in this digraph
      */
-    public int V() {
-        return V;
+    public int vertices() {
+        return vertices;
     }
 
     /**
@@ -53,8 +53,8 @@ class Digraph {
      *
      * @return the number of edges in this digraph
      */
-    public int E() {
-        return E;
+    public int edges() {
+        return edges;
     }
 
     /**
@@ -62,22 +62,24 @@ class Digraph {
      *
      * @param  v the tail vertex
      * @param  w the head vertex
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @throws IllegalArgumentException unless both
+     * {@code 0 <= v < V} and {@code 0 <= w < V}
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        edges++;
     }
 
     /**
      * Returns the vertices adjacent from vertex {@code v} in this digraph.
      *
      * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
+     * @return the vertices adjacent from vertex {@code v}
+     * in this digraph, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
 
@@ -89,7 +91,7 @@ class Digraph {
      * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int outdegree(int v) {
+    public int outdegree(final int v) {
         return adj[v].size();
     }
 
@@ -101,7 +103,7 @@ class Digraph {
      * @return the indegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int indegree(int v) {
+    public int indegree(final int v) {
         return indegree[v];
     }
 
@@ -111,10 +113,10 @@ class Digraph {
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
-            for (int w : adj(v)) {
-                reverse.addEdge(w, v);
+        Digraph reverse = new Digraph(vertices);
+        for (int j = 0; j < vertices; j++) {
+            for (int w : adj(j)) {
+                reverse.addEdge(w, j);
             }
         }
         return reverse;
