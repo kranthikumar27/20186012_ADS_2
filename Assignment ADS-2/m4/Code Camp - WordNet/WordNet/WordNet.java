@@ -7,9 +7,10 @@ public class WordNet {
 		//hypernymsFile(hypernyms);
 
 	}
+	private int numOfVertices = 0;
 	void synsetsFile(String filename, String hypernyms) {
 		int id = 0;
-		int numOfVertices = 0;
+		
 		try {
 			In inObj = new In(filename);
 			while (!inObj.isEmpty()) {
@@ -31,17 +32,30 @@ public class WordNet {
 			String[] tokens = inobj.readString().split(",");
 			for (int i = 1; i < tokens.length; i++) {
 				diObj.addEdge(Integer.parseInt(tokens[0]),
-				 Integer.parseInt(tokens[i]));
+				              Integer.parseInt(tokens[i]));
 			}
 			//System.out.println(Arrays.toString(tokens));
 		}
 		//System.out.println(diObj);
 		DirectedCycle dc = new DirectedCycle(diObj);
+		int count = 0;
+		for (int i = 1; i < numOfVertices; i++) {
+			if (diObj.outdegree(i) == 0) {
+				count++;
+			}
+		}
+		if (count > 1) {
+			System.out.println("Multiple roots");
+			return;
+		}
 		if (dc.hasCycle()) {
-		 	System.out.println("Cycle detected");
-		 } else {
-		 	System.out.println(diObj);
-		 }
+			System.out.println("Cycle detected");
+		} else {
+			System.out.println(diObj);
+		}
+	}
+	public boolean isNoun(String word) {
+		return false;
 	}
 }
 

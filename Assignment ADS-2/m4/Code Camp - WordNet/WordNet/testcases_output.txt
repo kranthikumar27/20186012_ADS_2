@@ -166,18 +166,12 @@ Your Output:
 5:
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-6 vertices, 4 edges 
-0: 1 
-1: 2 
-2: 3 
-3: 
-4: 5 
-5:
+Multiple roots
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
