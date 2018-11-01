@@ -39,7 +39,7 @@ public class WordNet {
 		//System.out.println(diObj);
 		DirectedCycle dc = new DirectedCycle(diObj);
 		int count = 0;
-		for (int i = 1; i < numOfVertices; i++) {
+		for (int i = 0; i < numOfVertices; i++) {
 			if (diObj.outdegree(i) == 0) {
 				count++;
 			}
