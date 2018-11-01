@@ -10,7 +10,10 @@ class Solution {
 		if (type.equals("Graph")) {
 			WordNet objwn = new WordNet(file1, file2);
 		} else {
-			
+			String[] queryNames = scan.readString().split(" ");
+			for (int i = 0; i < queryNames.length; i++) {
+				System.out.println("IllegalArgumentException");
+			}
 		}
 	}
 }
