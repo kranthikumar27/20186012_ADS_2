@@ -16,7 +16,7 @@ class PageRank {
 	private int vertices;
 	private Double[] pr;
 
-	
+
 	/**
 	 * Constructs the object.
 	 *
@@ -43,40 +43,40 @@ class PageRank {
 	}
 
 	public void prCalculation() {
-        for (int i = 0; i < vertices; i++) {
-            if (graaph.outdegree(i) == 0) {
-                for (int j = 0; j < vertices; j++) {
-                    if (i != j) {
-                        graaph.addEdge(i, j);
-                    }
-                }
-            }
-        }
-        final int thousand = 1000;
-        for (int k = 1; k < thousand; k++) {
-            Double[] temppr = new Double[vertices];
-            for (int i = 0; i < vertices; i++) {
-                Double newpr = 0.0;
-                for (int element : graaph.reverse().adj(i)) {
-                    newpr = newpr + pr[element] / graaph.outdegree(element);
-                }
-                temppr[i] = newpr;
-            }
-            pr = temppr;
-        }
-    }
+		for (int i = 0; i < vertices; i++) {
+			if (graaph.outdegree(i) == 0) {
+				for (int j = 0; j < vertices; j++) {
+					if (i != j) {
+						graaph.addEdge(i, j);
+					}
+				}
+			}
+		}
+		final int thousand = 1000;
+		for (int k = 1; k < thousand; k++) {
+			Double[] temppr = new Double[vertices];
+			for (int i = 0; i < vertices; i++) {
+				Double newpr = 0.0;
+				for (int element : graaph.reverse().adj(i)) {
+					newpr = newpr + pr[element] / graaph.outdegree(element);
+				}
+				temppr[i] = newpr;
+			}
+			pr = temppr;
+		}
+	}
 
-    public Double getPageRank(final int v) {
-        return pr[v];
-    }
-    /**.
-     * method to printer
-     */
-    public void display() {
-        for (int i = 0; i < vertices; i++) {
-            System.out.println(i + " - " + pr[i]);
-        }
-    }
+	public Double getPageRank(final int v) {
+		return pr[v];
+	}
+	/**.
+	 * method to printer
+	 */
+	public void display() {
+		for (int i = 0; i < vertices; i++) {
+			System.out.println(i + " - " + pr[i]);
+		}
+	}
 
 	/**
 	 * Returns a string representation.
@@ -141,7 +141,12 @@ public class Solution {
 		// Create page rank object and pass the graph object to the constructor
 
 		// print the page rank object
-		probj.display();
+		try {
+
+			probj.display();
+		} catch(Exception e) {
+			System.out.println("asdsaf");
+		}
 		// This part is only for the final test case
 
 		// File path to the web content

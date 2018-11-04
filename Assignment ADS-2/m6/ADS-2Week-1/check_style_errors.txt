@@ -289,16 +289,17 @@ Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:9: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:13: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:17:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:19: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:25:18: Parameter digraph should be final. [FinalParameters]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:45:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:69:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:61: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:69:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:115:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:123: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:141: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:151: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:147:24: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:156: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 15 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
