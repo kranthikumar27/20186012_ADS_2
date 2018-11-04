@@ -141,7 +141,7 @@ public class Solution {
 		// Create page rank object and pass the graph object to the constructor
 
 		// print the page rank object
-
+		probj.display();
 		// This part is only for the final test case
 
 		// File path to the web content
