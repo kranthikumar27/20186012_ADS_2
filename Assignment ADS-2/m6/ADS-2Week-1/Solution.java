@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /**
  * Class for page rank.
  */
@@ -14,6 +15,9 @@ class PageRank {
 	 * { var_description }
 	 */
 	private int vertices;
+	/**
+	 * { var_description }
+	 */
 	private Double[] pr;
 
 
@@ -119,21 +123,21 @@ public class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
-		In scan = new In();
+		Scanner scan = new Scanner(System.in);
 		// read the first line of the input to get the number of vertices
-		int numOfVertices = Integer.parseInt(scan.readLine());
+		int numOfVertices = Integer.parseInt(scan.nextLine());
 		Digraph diobj = new Digraph(numOfVertices);
-		while (numOfVertices > 0) {
-			String[] tokens = scan.readLine().split(" ");
-			int v = Integer.parseInt(tokens[0]);
-			for (int i = 1; i < tokens.length; i++) {
-				diobj.addEdge(v, Integer.parseInt(tokens[i]));
+		for (int i = 0; i < numOfVertices; i++) {
+			String[] tokens = scan.nextLine().split(" ");
+			for (int j = 1; j < tokens.length; j++) {
+				int v = Integer.parseInt(tokens[0]);
+				int adj = Integer.parseInt(tokens[i]);
+				diobj.addEdge(v, adj);
 			}
 
 			// iterate count of vertices times
 			// to read the adjacency list from std input
 			// and build the graph
-			numOfVertices--;
 		}
 		System.out.println(diobj.toString());
 		PageRank probj = new PageRank(diobj);
@@ -141,12 +145,8 @@ public class Solution {
 		// Create page rank object and pass the graph object to the constructor
 
 		// print the page rank object
-		try {
-
 			probj.display();
-		} catch(Exception e) {
-			System.out.println("asdsaf");
-		}
+		
 		// This part is only for the final test case
 
 		// File path to the web content
