@@ -131,7 +131,7 @@ public class Solution {
 			String[] tokens = scan.nextLine().split(" ");
 			for (int j = 1; j < tokens.length; j++) {
 				int v = Integer.parseInt(tokens[0]);
-				int adj = Integer.parseInt(tokens[i]);
+				int adj = Integer.parseInt(tokens[j]);
 				diobj.addEdge(v, adj);
 			}
 
