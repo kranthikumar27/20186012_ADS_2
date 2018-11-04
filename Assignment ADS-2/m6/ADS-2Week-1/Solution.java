@@ -57,8 +57,8 @@ class PageRank {
             Double[] temppr = new Double[vertices];
             for (int i = 0; i < vertices; i++) {
                 Double newpr = 0.0;
-                for (int ele : graaph.reverse().adj(i)) {
-                    newpr = newpr + pr[ele] / graaph.outdegree(ele);
+                for (int element : graaph.reverse().adj(i)) {
+                    newpr = newpr + pr[element] / graaph.outdegree(element);
                 }
                 temppr[i] = newpr;
             }
@@ -135,7 +135,7 @@ public class Solution {
 			// and build the graph
 			numOfVertices--;
 		}
-		System.out.println(diobj);
+		System.out.println(diobj.toString());
 		PageRank probj = new PageRank(diobj);
 
 		// Create page rank object and pass the graph object to the constructor
