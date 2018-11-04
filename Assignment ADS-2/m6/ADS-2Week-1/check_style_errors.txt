@@ -289,17 +289,18 @@ Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:10: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:14: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:18: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:29:18: Parameter digraph should be final. [FinalParameters]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:49:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:65: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:73:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:119:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:127: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:145: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:149: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:156: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:27:12: Unused @param tag for 'digraph'. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:48:32: 'gr' hides a field. [HiddenField]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:48:32: Expected @param tag for 'gr'. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:60:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:85:10: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:131:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:139: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:157: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:161: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Solution.java:168: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 16 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

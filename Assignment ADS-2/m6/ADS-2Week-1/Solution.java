@@ -6,7 +6,7 @@ class PageRank {
 	/**
 	 * { var_description }
 	 */
-	private Digraph graaph;
+	private Digraph gr;
 	/**
 	 * { var_description }
 	 */
@@ -26,61 +26,73 @@ class PageRank {
 	 *
 	 * @param      digraph  The digraph
 	 */
-	PageRank(Digraph digraph) {
-		// firstPR = new double[10];
-		// newPR = new double[10];
-		// this.tempDigraph = digraph;
-		// for (int i = 0; i < digraph.V(); i++) {
-		// 	firstPR[i] = 1.0 / tempDigraph.V();
-		// 	newPR[i] = getPageRank(i);
-		// }
-		// print();
-		this.graaph = graaph;
-		this.revdg = graaph.reverse();
-		this.vertices = graaph.V();
-		pr = new Double[vertices];
-		int ver = graaph.V();
-		for (int i = 0; i < vertices; i++) {
-			pr[i] = 1.0 / ver;
-		}
-		prCalculation();
-	}
+	// PageRank(Digraph digraph) {
+	// 	// firstPR = new double[10];
+	// 	// newPR = new double[10];
+	// 	// this.tempDigraph = digraph;
+	// 	// for (int i = 0; i < digraph.V(); i++) {
+	// 	// 	firstPR[i] = 1.0 / tempDigraph.V();
+	// 	// 	newPR[i] = getPageRank(i);
+	// 	// }
+	// 	// print();
+	// 	this.graaph = graaph;
+	// 	this.revdg = graaph.reverse();
+	// 	this.vertices = graaph.V();
+	// 	pr = new Double[vertices];
+	// 	int ver = graaph.V();
+	// 	for (int i = 0; i < vertices; i++) {
+	// 		pr[i] = 1.0 / ver;
+	// 	}
+	// 	prCalculation();
+	// }
+	PageRank(final Digraph gr) {
+        this.gr = gr;
+        this.revdg = gr.reverse();
+        this.vertices = gr.V();
+        pr = new Double[vertices];
+        int ver = gr.V();
+        for (int i = 0; i < vertices; i++) {
+            pr[i] = 1.0 / ver;
+        }
+        prCalculation();
+    }
 
 	public void prCalculation() {
-		for (int i = 0; i < vertices; i++) {
-			if (graaph.outdegree(i) == 0) {
-				for (int j = 0; j < vertices; j++) {
-					if (i != j) {
-						graaph.addEdge(i, j);
-					}
-				}
-			}
-		}
-		final int thousand = 1000;
-		for (int k = 1; k < thousand; k++) {
-			Double[] temppr = new Double[vertices];
-			for (int i = 0; i < vertices; i++) {
-				Double newpr = 0.0;
-				for (int element : graaph.reverse().adj(i)) {
-					newpr = newpr + pr[element] / graaph.outdegree(element);
-				}
-				temppr[i] = newpr;
-			}
-			pr = temppr;
-		}
-	}
+        for (int i = 0; i < vertices; i++) {
+            if (gr.outdegree(i) == 0) {
+                for (int j = 0; j < vertices; j++) {
+                    if (i != j) {
+                        gr.addEdge(i, j);
+                    }
+                }
+            }
+        }
+        final int thousand = 1000;
+        for (int k = 1; k < thousand; k++) {
+            Double[] temppr = new Double[vertices];
+            for (int i = 0; i < vertices; i++) {
+                Double newpr = 0.0;
+                for (int ele : gr.reverse().adj(i)) {
+                    newpr = newpr
+                    + pr[ele] / gr.outdegree(ele);
+                }
+                temppr[i] = newpr;
+            }
+            pr = temppr;
+        }
+    }
 
-	public Double getPageRank(final int v) {
-		return pr[v];
-	}
+	 public Double getPageRank(final int v) {
+        return pr[v];
+    }
 	/**.
 	 * method to printer
 	 */
 	public void display() {
-		for (int i = 0; i < vertices; i++) {
-			System.out.println(i + " - " + pr[i]);
-		}
-	}
+        for (int i = 0; i < vertices; i++) {
+            System.out.println(i + " - " + pr[i]);
+        }
+    }
 
 	/**
 	 * Returns a string representation.
