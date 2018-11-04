@@ -5,53 +5,101 @@ class PageRank {
 	/**
 	 * { var_description }
 	 */
-	Digraph tempDigraph;
+	private Digraph graaph;
 	/**
 	 * { var_description }
 	 */
-	double[] firstPR;
+	private Digraph revdg;
 	/**
 	 * { var_description }
 	 */
-	double[] newPR;
+	private int vertices;
+	private Double[] pr;
 
+	
 	/**
 	 * Constructs the object.
 	 *
 	 * @param      digraph  The digraph
 	 */
 	PageRank(Digraph digraph) {
-		firstPR = new double[10];
-		newPR = new double[10];
-		this.tempDigraph = digraph;
-		for (int i = 0; i < digraph.V(); i++) {
-			firstPR[i] = 1.0 / tempDigraph.V();
-			newPR[i] = getPageRank(i);
+		// firstPR = new double[10];
+		// newPR = new double[10];
+		// this.tempDigraph = digraph;
+		// for (int i = 0; i < digraph.V(); i++) {
+		// 	firstPR[i] = 1.0 / tempDigraph.V();
+		// 	newPR[i] = getPageRank(i);
+		// }
+		// print();
+		this.graaph = graaph;
+		this.revdg = graaph.reverse();
+		this.vertices = graaph.V();
+		pr = new Double[vertices];
+		int ver = graaph.V();
+		for (int i = 0; i < vertices; i++) {
+			pr[i] = 1.0 / ver;
 		}
-		print();
-	}
-	/**
-     * Returns a string representation.
-     */
-	public void print() {
-		for (int i = 0; i < tempDigraph.V(); i++) {
-			System.out.println(i  + " - " + newPR[i]);
-		}
+		prCalculation();
 	}
 
-	public double getPageRank(int v) {
-		for (int i = 0; i < tempDigraph.V(); i++) {
-			firstPR[i] = 1.0 / tempDigraph.V();
-			int inDegree = tempDigraph.indegree(v);
-			if (inDegree == 0.0) {
-				return 0.0;
-			} else {
-				double r = firstPR[i] / inDegree;
-				return r;
-			}
-		}
-		return -10.4;
-	}
+	public void prCalculation() {
+        for (int i = 0; i < vertices; i++) {
+            if (graaph.outdegree(i) == 0) {
+                for (int j = 0; j < vertices; j++) {
+                    if (i != j) {
+                        graaph.addEdge(i, j);
+                    }
+                }
+            }
+        }
+        final int thousand = 1000;
+        for (int k = 1; k < thousand; k++) {
+            Double[] temppr = new Double[vertices];
+            for (int i = 0; i < vertices; i++) {
+                Double newpr = 0.0;
+                for (int ele : graaph.reverse().adj(i)) {
+                    newpr = newpr + pr[ele] / graaph.outdegree(ele);
+                }
+                temppr[i] = newpr;
+            }
+            pr = temppr;
+        }
+    }
+
+    public Double getPageRank(final int v) {
+        return pr[v];
+    }
+    /**.
+     * method to printer
+     */
+    public void display() {
+        for (int i = 0; i < vertices; i++) {
+            System.out.println(i + " - " + pr[i]);
+        }
+    }
+
+	/**
+	 * Returns a string representation.
+	 */
+	// public void print() {
+	// 	for (int i = 0; i < tempDigraph.V(); i++) {
+	// 		System.out.println(i  + " - " + newPR[i]);
+	// 	}
+	// }
+
+	// public double getPageRank(int v) {
+	// 	for (int i = 0; i < tempDigraph.V(); i++) {
+	// 		firstPR[i] = 1.0 / tempDigraph.V();
+	// 		int inDegree = tempDigraph.indegree(v);
+	// 		if (inDegree == 0.0) {
+	// 			return 0.0;
+	// 		} else {
+	// 			double r = firstPR[i] / inDegree;
+	// 			return r;
+	// 		}
+	// 	}
+	// 	return -10.4;
+	// }
 
 }
 /**
