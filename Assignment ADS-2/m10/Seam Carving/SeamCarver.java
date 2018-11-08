@@ -2,21 +2,25 @@
 public class SeamCarver {
 	private Picture picture;
 	// create a seam carver object based on the given picture
-	public SeamCarver(Picture picture) {
-		
+	public SeamCarver(Picture picture1) {
+		if (picture1 == null) {
+			throw new IllegalArgumentException("picture is null");
+		} else {
+			this.picture = picture1;
+		}
 	}
 	// current picture
 	public Picture picture() {
-		return null;
+		return this.picture;
 	}
 	// width of current picture
 	public int width() {
-		return 0;
+		return picture.width();
 	}
 
 	// height of current picture
 	public int height() {
-		return 0;
+		return picture.height();
 	}
 
 	// energy of pixel at column x and row y
