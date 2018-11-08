@@ -52,7 +52,7 @@ class Percolation {
         array = new boolean[size];
         for (int i = 0; i < arraySize; i++) {
             graph.addEdge(top, i);
-            graph.addEdge(bottom, size - i);
+            graph.addEdge(bottom, size - i - 1);
         }
     }
     /**
@@ -63,7 +63,7 @@ class Percolation {
      *
      * @return  onedimensional array
      */
-    public int toOne(final int row, final int col) {
+    public int toOneD(final int row, final int col) {
         return (arraySize * (row - 1)) + (col - 1);
     }
     /**
@@ -84,7 +84,7 @@ class Percolation {
      * @param      col  The column
      */
     public void open(final int row, final int col) {
-        int index = toOne(row, col);
+        int index = toOneD(row, col);
         array[index] = true;
         count++;
         int toprow = index - arraySize;
@@ -121,7 +121,7 @@ class Percolation {
      * @return     True if open, False otherwise.
      */
     public boolean isOpen(final int row, final int col) {
-        return array[toOne(row, col)];
+        return array[toOneD(row, col)];
     }
     /**
      * return number of open sites.
@@ -149,7 +149,7 @@ public final class Solution {
      * Constructs the object.
      */
     protected Solution() {
-        
+        //eval purpose.
     }
     /**
      * main method.
