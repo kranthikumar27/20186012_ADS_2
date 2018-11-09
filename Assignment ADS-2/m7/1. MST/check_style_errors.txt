@@ -1,47 +1,8 @@
 Starting audit...
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:8: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:34: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:38: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:43: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:45: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:54:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:55:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:58: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:59:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:60:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:95:21: Parameter item should be final. [FinalParameters]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:105: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:107: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:110: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:114: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:115:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:117:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:117:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:117:29: Parameter first should be final. [FinalParameters]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:117:40: 'first' hides a field. [HiddenField]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:121: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:121:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:122: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:122:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:124:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:125: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Bag.java:127: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 28 errors.
 Starting audit...
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\LazyPrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
-Starting audit...
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
