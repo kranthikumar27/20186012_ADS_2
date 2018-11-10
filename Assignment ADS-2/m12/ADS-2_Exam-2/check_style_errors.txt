@@ -1,0 +1,57 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:10: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:16: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:23: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:24:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:25:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:26:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:29: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:38:25: Parameter v should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:38:29: 'v' hides a field. [HiddenField]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:38:32: Parameter w should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:38:36: 'w' hides a field. [HiddenField]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:38:39: Parameter weight should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:38:46: 'weight' hides a field. [HiddenField]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:39: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:39: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:40: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:40: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:41: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:41: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:84:29: Parameter args should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:85:43: '12' is a magic number. [MagicNumber]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:85:47: '34' is a magic number. [MagicNumber]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\DirectedEdge.java:85:51: '5.67' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 24 errors.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:4: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:5:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:9:3: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:47: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 7 errors.
+Starting audit...
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
