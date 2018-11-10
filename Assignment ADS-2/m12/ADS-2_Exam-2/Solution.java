@@ -1,11 +1,19 @@
 import java.util.Scanner;
-
+/**.
+ * Solution class.
+ */
 public final class Solution {
-  
+  /**.
+   * Constructs the object.
+   */
   private Solution() {
-
+  	//default constructor.
   }
-
+  /**.
+   * { function_description }
+   *
+   * @param      args  The arguments
+   */
   public static void main(final String[] args) {
     // Self loops are not allowed...
     // Parallel Edges are allowed...
@@ -35,7 +43,16 @@ public final class Solution {
       // First is the source and second is the destination.
       // If the path exists print the distance between them.
       // Other wise print "No Path Found."
-      
+      String[] tokens = scan.nextLine().split(" ");
+      int source = Integer.parseInt(tokens[0]);
+      int destination = Integer.parseInt(tokens[1]);
+      DijkstraUndirectedSP obj1 =
+        new DijkstraUndirectedSP(edgeGraph, source);
+      if (obj1.hasPathTo(destination)) {
+        System.out.println(obj1.distTo(destination));
+      } else {
+      	System.out.println("No Path Found.");
+      }
       break;
     case "ViaPaths":
       // Handle the case of ViaPaths, where three integers are given.
