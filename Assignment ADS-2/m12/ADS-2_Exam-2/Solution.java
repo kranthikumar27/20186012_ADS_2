@@ -69,7 +69,7 @@ public final class Solution {
         new DijkstraUndirectedSP(edgeGraph, source2);
       if (obj2.hasPathTo(destination2)) {
         System.out.println(obj2.distTo(destination2));
-        System.out.println(obj2.pathTo(destination2));
+
       } else {
         System.out.println("No Path Found.");
       }
@@ -80,4 +80,7 @@ public final class Solution {
     }
 
   }
+  
 }
+
+
