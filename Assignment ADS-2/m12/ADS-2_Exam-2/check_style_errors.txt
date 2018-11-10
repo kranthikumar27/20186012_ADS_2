@@ -43,9 +43,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Solution.java:10:3: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m12\ADS-2_Exam-2\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

@@ -7,7 +7,7 @@ public final class Solution {
    * Constructs the object.
    */
   private Solution() {
-  	//default constructor.
+    //default constructor.
   }
   /**.
    * { function_description }
@@ -51,7 +51,7 @@ public final class Solution {
       if (obj1.hasPathTo(destination)) {
         System.out.println(obj1.distTo(destination));
       } else {
-      	System.out.println("No Path Found.");
+        System.out.println("No Path Found.");
       }
       break;
     case "ViaPaths":
@@ -69,6 +69,7 @@ public final class Solution {
         new DijkstraUndirectedSP(edgeGraph, source2);
       if (obj2.hasPathTo(destination2)) {
         System.out.println(obj2.distTo(destination2));
+        System.out.println(obj2.pathTo(destination2));
       } else {
         System.out.println("No Path Found.");
       }
