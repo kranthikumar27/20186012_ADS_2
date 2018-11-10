@@ -74,13 +74,9 @@ public final class Solution {
         System.out.println("No Path Found.");
       }
       break;
-
     default:
       break;
     }
-
   }
-  
 }
-
 
