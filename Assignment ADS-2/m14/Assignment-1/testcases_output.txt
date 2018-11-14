@@ -8,18 +8,14 @@ ABASE
 ABASES
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
-	at Queue.enqueue(Queue.java:96)
-	at TST.collect(TST.java:160)
-	at TST.collect(TST.java:161)
-	at TST.collect(TST.java:161)
-	at TST.keysWithPrefix(TST.java:152)
+Exception in thread "main" java.lang.NoClassDefFoundError: Queue$ListIterator
+	at Queue.iterator(Queue.java:139)
 	at Solution.main(Solution.java:17)
-Caused by: java.lang.ClassNotFoundException: Queue$Node
+Caused by: java.lang.ClassNotFoundException: Queue$ListIterator
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 6 more
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -36,15 +32,14 @@ ABSTRACTIONS
 ABSURD
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
-	at Queue.enqueue(Queue.java:96)
-	at TST.keysWithPrefix(TST.java:151)
+Exception in thread "main" java.lang.NoClassDefFoundError: Queue$ListIterator
+	at Queue.iterator(Queue.java:139)
 	at Solution.main(Solution.java:17)
-Caused by: java.lang.ClassNotFoundException: Queue$Node
+Caused by: java.lang.ClassNotFoundException: Queue$ListIterator
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -85,19 +80,14 @@ ACCURATELY
 ACCUSTOMED
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
-	at Queue.enqueue(Queue.java:96)
-	at TST.collect(TST.java:160)
-	at TST.collect(TST.java:161)
-	at TST.collect(TST.java:161)
-	at TST.collect(TST.java:161)
-	at TST.keysWithPrefix(TST.java:152)
+Exception in thread "main" java.lang.NoClassDefFoundError: Queue$ListIterator
+	at Queue.iterator(Queue.java:139)
 	at Solution.main(Solution.java:17)
-Caused by: java.lang.ClassNotFoundException: Queue$Node
+Caused by: java.lang.ClassNotFoundException: Queue$ListIterator
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 7 more
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -194,15 +184,14 @@ ADVOCATING
 ADY
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
-	at Queue.enqueue(Queue.java:96)
-	at TST.keysWithPrefix(TST.java:151)
+Exception in thread "main" java.lang.NoClassDefFoundError: Queue$ListIterator
+	at Queue.iterator(Queue.java:139)
 	at Solution.main(Solution.java:17)
-Caused by: java.lang.ClassNotFoundException: Queue$Node
+Caused by: java.lang.ClassNotFoundException: Queue$ListIterator
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -251,15 +240,14 @@ SUBTYPE
 SUBVERT
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
-	at Queue.enqueue(Queue.java:96)
-	at TST.keysWithPrefix(TST.java:151)
+Exception in thread "main" java.lang.NoClassDefFoundError: Queue$ListIterator
+	at Queue.iterator(Queue.java:139)
 	at Solution.main(Solution.java:17)
-Caused by: java.lang.ClassNotFoundException: Queue$Node
+Caused by: java.lang.ClassNotFoundException: Queue$ListIterator
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+	... 2 more
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -808,14 +796,13 @@ REXAMPLE
 REY
 
 Your Output: 
-Exception in thread "main" java.lang.NoClassDefFoundError: Queue$Node
-	at Queue.enqueue(Queue.java:96)
-	at TST.keysWithPrefix(TST.java:151)
+Exception in thread "main" java.lang.NoClassDefFoundError: Queue$ListIterator
+	at Queue.iterator(Queue.java:139)
 	at Solution.main(Solution.java:17)
-Caused by: java.lang.ClassNotFoundException: Queue$Node
+Caused by: java.lang.ClassNotFoundException: Queue$ListIterator
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
 	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
-	... 3 more
+	... 2 more
 ----------------------------------------
 
