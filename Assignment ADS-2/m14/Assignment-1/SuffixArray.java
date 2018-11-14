@@ -205,3 +205,4 @@ public class SuffixArray {
         return query.length() - suffix.length();
     }
 }
+
