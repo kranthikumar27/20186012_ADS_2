@@ -144,16 +144,11 @@ Audit done.
 Checkstyle ends with 141 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:13:58: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:22:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:28: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:12: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\Solution.java:26:58: ';' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
