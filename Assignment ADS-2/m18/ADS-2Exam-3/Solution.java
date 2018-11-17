@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.*;
 
 public class Solution {
 
@@ -107,8 +107,8 @@ class T9 {
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
         tstobj = new TST();
-        for (String word: st.keys()) {
-            tstobj.put(word, st.get(word));
+        for (String str: st.keys()) {
+            tstobj.put(str, st.get(str));
         }
 
     }
