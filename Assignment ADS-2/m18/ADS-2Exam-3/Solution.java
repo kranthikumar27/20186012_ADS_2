@@ -1,10 +1,16 @@
 import java.util.Scanner;
 import java.util.*;
-
-public class Solution {
-
+/**
+ * Class for solution.
+ */
+public final class Solution {
     // Don't modify this method.
-    public static void main(String[] args) {
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();
 
@@ -80,12 +86,12 @@ public class Solution {
     }
 
     // Don't modify this method.
-    public static String[] toReadFile(String file) {
+    public static String[] toReadFile(final String file) {
         In in = new In(file);
         return in.readAllStrings();
     }
 
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
+    public static BinarySearchST<String, Integer> loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
         String[] tokens = toReadFile(file);
@@ -106,31 +112,44 @@ class T9 {
     TST tstobj;
     public T9(BinarySearchST<String, Integer> st) {
         tstobj = new TST();
-        for(String key : st.keys()){
+        for (String key : st.keys()) {
             tstobj.put(key, st.get(key));
         }
     }
 
     // get all the prefixes that match with given prefix.
-    public Iterable<String> getAllWords(String prefix) {
+    public Iterable<String> getAllWords(final String prefix) {
         // your code goes here
         return tstobj.keysWithPrefix(prefix);
     }
 
-    public Iterable<String> potentialWords(String t9Signature) {
+    public Iterable<String> potentialWords(final String t9Signature) {
         // your code goes here
+
+        
         return null;
     }
 
     // return all possibilities(words), find top k with highest frequency.
-    public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+    public Iterable<String> getSuggestions(final Iterable<String> words,final int k) {
         // your code goes here
+        // int m = 0;
+        // for (String key : words) {
+        //     Integer value = tstobj.get(key);
+        //     if (st.contains(value)) {
+        //         String str = st.get(value);
+        //         if (str.length() > key.length()) {
+        //             key = str;
+        //         }
+        //     }
+        //     st.put(value, key);
+        // }
         return null;
     }
 
     // final output
     // Don't modify this method.
-    public Iterable<String> t9(String t9Signature, int k) {
+    public Iterable<String> t9(final String t9Signature,final int k) {
         return getSuggestions(potentialWords(t9Signature), k);
     }
 }
