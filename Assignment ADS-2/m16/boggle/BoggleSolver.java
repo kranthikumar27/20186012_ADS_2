@@ -100,12 +100,12 @@ public class BoggleSolver {
      * { function_description }
      *
      * @param      board   The board
-     * @param      marked  The marked
+     * @param      marked1  The marked
      * @param      rows    The rows
      * @param      cols    The cols
      * @param      word    The word
      */
-    public void dfs(final BoggleBoard board, final boolean[][] marked,
+    public void dfs(final BoggleBoard board, final boolean[][] marked1,
      final int rows, final int cols, final String word) {
         if (!dictionaryTrie.hasPrefix(word)) {
             return;
@@ -116,14 +116,14 @@ public class BoggleSolver {
         marked[rows][cols] = true;
         for (int i = rows - 1; i <= rows + 1; i++) {
             for (int j = cols - 1; j <= cols + 1; j++) {
-                if (isValidRowColumn(i, j, board) && !marked[i][j]) {
+                if (isValidRowColumn(i, j, board) && !marked1[i][j]) {
                     String sequence = appendCharacter(word,
                      board.getLetter(i, j));
-                    dfs(board, marked, i, j, sequence);
+                    dfs(board, marked1, i, j, sequence);
                 }
             }
         }
-        marked[rows][cols] = false;
+        marked1[rows][cols] = false;
     }
     /**.
      * Determines if valid row column.
