@@ -45,7 +45,7 @@ public final class Solution {
 				}
 				StdOut.println("Score = " + score);
 			} catch (Exception ex) {
-				System.out.println(ex.getMessage());
+				System.out.println("board is null");
 			}
 			break;
 		}
