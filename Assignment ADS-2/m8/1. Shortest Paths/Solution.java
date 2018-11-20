@@ -24,7 +24,7 @@ public final class Solution {
         EdgeWeightedGraph ewgobj = new EdgeWeightedGraph(n);
         HashMap<String, Integer> hashobj = new HashMap<String, Integer>();
         for (int i = 0; i < n; i++) {
-            hashobj.put(stations[1], i);
+            hashobj.put(stations[i], i);
         }
         while (m > 0) {
             String[] distance = scan.nextLine().split(" ");
@@ -48,3 +48,4 @@ public final class Solution {
         }
     }
 }
+
