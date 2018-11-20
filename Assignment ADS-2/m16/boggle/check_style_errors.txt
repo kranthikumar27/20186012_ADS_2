@@ -553,21 +553,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 465 errors.
 Starting audit...
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:23: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:36:43: '3' is a magic number. [MagicNumber]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:36:46: '5' is a magic number. [MagicNumber]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:36:49: '11' is a magic number. [MagicNumber]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:38:34: '8' is a magic number. [MagicNumber]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:39:42: '11' is a magic number. [MagicNumber]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:72:8: Unused @param tag for 'sb'. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:77:49: Expected @param tag for 's'. [JavadocMethod]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:77:51: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:95:29: '3' is a magic number. [MagicNumber]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:100: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:109:64: 'marked' hides a field. [HiddenField]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:122: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\BoggleSolver.java:108:64: 'marked' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
@@ -749,12 +737,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\Solution.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\Solution.java:27: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\Solution.java:42: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\Solution.java:42:34: ':' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
