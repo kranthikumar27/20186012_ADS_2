@@ -31,7 +31,6 @@ public final class Solution {
 			}
 			StdOut.println("Score = " + score);
 			break;
-
 		default:
 			try {
 				dictionaryName = StdIn.readLine();
@@ -49,6 +48,6 @@ public final class Solution {
 			}
 			break;
 		}
-
 	}
 }
+

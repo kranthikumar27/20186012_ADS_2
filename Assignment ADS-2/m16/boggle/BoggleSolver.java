@@ -1,15 +1,39 @@
 import java.util.Set;
 import java.util.TreeSet;
+/**
+ * Class for boggle solver.
+ */
 public class BoggleSolver {
-    // Initializes the data structure using the given array of strings as the dictionary.
-    // (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
+    // Initializes the data structure using
+    //  the given array of strings as the dictionary.
+    // (You can assume each word in the dictionary
+    //  contains only the uppercase letters A through Z.)
+    /**
+    *object creation for trieST.
+    */
     private TrieST<Integer> dictionaryTrie;
+    /**
+     * set of valid words.
+     */
     private Set<String> validWords;
+     /**
+     * visited character.
+     */
     private boolean[][] marked;
-    int[] points = {0, 0, 0, 1, 1, 2, 3, 5, 11};
-    public BoggleSolver(String[] dictionary) {
+    
+    /**
+     * Constructs the object.
+     *
+     * @param      dictionary  The dictionary
+     */
+    public BoggleSolver(final String[] dictionary) {
         dictionaryTrie = new TrieST<Integer>();
         validWords = new TreeSet<String>();
+        final int three = 3;
+        final int five = 5;
+        final int eight = 8;
+        final int eleven = 11;
+        int[] points = {0, 0, 0, 1, 1, 2, 3, 5, 11};
         for (String word : dictionary) {
             if (word.length() >= 8) {
                 dictionaryTrie.put(word, 11);
@@ -19,8 +43,17 @@ public class BoggleSolver {
         }
     }
 
-    // Returns the set of all valid words in the given Boggle board, as an Iterable.
-    public Iterable<String> getAllValidWords(BoggleBoard board) {
+    // Returns the set of all valid words in
+    // the given Boggle board, as an Iterable.
+    /**
+     * Gets all valid words.
+     *Returns the set of all valid words in the
+     * given Boggle board, as an Iterable.
+     * @param      board  The board
+     *
+     * @return     All valid words.
+     */
+    public Iterable<String> getAllValidWords(final BoggleBoard board) {
         if (board == null) {
             throw new IllegalArgumentException("board is null");
         }
@@ -33,8 +66,16 @@ public class BoggleSolver {
         }
         return validWords;
     }
-
-    private String appendCharacter(String str, char c) {
+    /**
+     * Appends a character.
+     *
+     * @param      sb String
+     * @param      c  character that to be added for the string.
+     *
+     * @return  appended String.
+     */
+    private String appendCharacter(final String s,final char c) {
+        String str = s;
         if (c == 'Q') {
             str += "QU";
             return str;
@@ -43,22 +84,35 @@ public class BoggleSolver {
             return str;
         }
     }
-
-    private boolean isValidWord(String word) {
+    /**
+     * Determines if valid word.
+     *
+     * @param      word  The word
+     *
+     * @return     True if valid word, False otherwise.
+     */
+    private boolean isValidWord(final String word) {
         if (word.length() < 3) {
             return false;
         }
         return dictionaryTrie.contains(word);
     }
-
-    public void dfs(BoggleBoard board, boolean[][] marked,
-                    int rows, int cols, String word) {
+    /**
+     * { function_description }
+     *
+     * @param      board   The board
+     * @param      marked  The marked
+     * @param      rows    The rows
+     * @param      cols    The cols
+     * @param      word    The word
+     */
+    public void dfs(final BoggleBoard board, final boolean[][] marked,
+                    final int rows, final int cols, final String word) {
         if (!dictionaryTrie.hasPrefix(word)) {
             return;
         }
 
         if (isValidWord(word)) {
-            //System.out.println(word + "----" + scoreOf(word));
             validWords.add(word);
         }
         marked[rows][cols] = true;
@@ -72,14 +126,33 @@ public class BoggleSolver {
         }
         marked[rows][cols] = false;
     }
-
-    private boolean isValidRowColumn(int row, int col, BoggleBoard board) {
-        return (row >= 0 && col >= 0 && row < board.rows() && col < board.cols());
+    /**
+     * Determines if valid row column.
+     *
+     * @param      row    The row
+     * @param      col    The col
+     * @param      board  The board
+     *
+     * @return     True if valid row column, False otherwise.
+     */
+    private boolean isValidRowColumn(final int row, final int col,
+     final BoggleBoard board) {
+        return (row >= 0 && col >= 0
+         && row < board.rows() && col < board.cols());
     }
 
-    // Returns the score of the given word if it is in the dictionary, zero otherwise.
-    // (You can assume the word contains only the uppercase letters A through Z.)
-    public int scoreOf(String word) {
+    // Returns the score of the given word if
+    //  it is in the dictionary, zero otherwise.
+    // (You can assume the word contains only
+    //  the uppercase letters A through Z.)
+    /**
+     * score of word.
+     *
+     * @param      word  The word
+     *
+     * @return  score.
+     */
+    public int scoreOf(final String word) {
         if (word == null) {
             return 0;
         }
@@ -89,3 +162,4 @@ public class BoggleSolver {
         return 0;
     }
 }
+
