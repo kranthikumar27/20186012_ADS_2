@@ -386,14 +386,25 @@ Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:2: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:6: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:9:9: Variable 'distanceGlobal' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:15:30: 'graph' hides a field. [HiddenField]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:41: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:42: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:6:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:6:16: Parameter graph should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:6:24: 'graph' hides a field. [HiddenField]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:10: Line is longer than 80 characters (found 104). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:11:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:11:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:11:23: Parameter v should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:11:44: Parameter w should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:17: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:18:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'ancestor' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'ancestor' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:18:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:18:25: Parameter v should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:18:46: Parameter w should be final. [FinalParameters]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:19: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\SAP.java:20: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 19 errors.
 Starting audit...
 [ERROR] F:\msit\Git\20186012_ADS_2\20186012_ADS_2\Assignment ADS-2\m4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

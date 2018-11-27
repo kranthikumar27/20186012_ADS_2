@@ -1,53 +1,33 @@
 public class SAP {
-    /**
-     *variable description;
-     */
-    private final Digraph graph;
-    /**
-     *variable description;
-     */
-    int distanceGlobal;
-    /**
-     * Constructs the object.
-     *
-     * @param      graph  The graph
-     */
-    public SAP(final Digraph graph) {
-        this.graph = graph;
-        this.distanceGlobal = 0;
-    }
-    /**
-     * shortest path finding method.
-     *
-     * @param      v  Iterable integer.
-     * @param      w  Iterable integer.
-     *
-     * @return  distance
-     */
-    public int length(final Iterable<Integer> v, final Iterable<Integer> w) {
-        ancestor(v, w);
-        return distanceGlobal;
-    }
-    /**
-     * ancestor finding method.
-     *
-     * @param      v  Iterable integer.
-     * @param      w  Iterable integer.
-     *
-     * @return ancestor
-     */
+    private Digraph graph;
+    // constructor takes a digraph (not necessarily a DAG)
+    private int distanceGlobal;
 
-    public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {
+    public SAP(Digraph graph) {
+        this.graph = graph;
+        // distanceGlobal = 0;
+    }
+    // length of shortest ancestral path between any vertex in v and any vertex in w; -1 if no such path
+    public int length(Iterable<Integer> v, Iterable<Integer> w) {
+        ancestor(v, w);
+        // System.out.println(distanceGlobal);
+        return this.distanceGlobal;
+    }
+
+    // a common ancestor that participates in shortest ancestral path; -1 if no such path
+    public int ancestor(Iterable<Integer> v, Iterable<Integer> w) {
         BreadthFirstDirectedPaths bfsV = new BreadthFirstDirectedPaths(graph, v);
         BreadthFirstDirectedPaths bfsW = new BreadthFirstDirectedPaths(graph, w);
-        distanceGlobal = Integer.MAX_VALUE;
+        this.distanceGlobal = Integer.MAX_VALUE;
         int ancestors = -1;
         for (int i = 0; i < graph.V(); i++) {
             if (bfsV.hasPathTo(i) && bfsW.hasPathTo(i)) {
                 int distance = bfsV.distTo(i) + bfsW.distTo(i);
                 if (distance < distanceGlobal) {
                     //shortPath = distance;
-                    distanceGlobal = distance;
+                    this.distanceGlobal = distance;
+                    // System.out.println("lkj");
+                    // System.out.println(distanceGlobal);
                     ancestors = i;
                 }
                 // return ancestor;
@@ -55,4 +35,7 @@ public class SAP {
         }
         return ancestors;
     }
+
+    // // do unit testing of this class
+    // public static void main(String[] args)
 }
