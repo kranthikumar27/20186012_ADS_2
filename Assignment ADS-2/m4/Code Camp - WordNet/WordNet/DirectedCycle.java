@@ -1,60 +1,55 @@
 /**
  * Class for directed cycle.
  */
-public class DirectedCycle {
+class DirectedCycle {
     /**
-     * {marked[v] = has vertex v been marked?}.
-     */
+     * { var_description }.
+     */ 
     private boolean[] marked;
     /**
-     * {edgeTo[v] = previous vertex on path to v}.
+     * // marked[v] = has vertex v been marked?.
      */
     private int[] edgeTo;
     /**
-     * {onStack[v] = is vertex on the stack?}.
+     * { var_description }.
      */
     private boolean[] onStack;
     /**
-     * {directed cycle (or null if no such cycle)}.
+     * { var_description }.
      */
     private Stack<Integer> cycle;
-
     /**
-     * Determines whether the digraph {@code digraph}.
-     * has a directed cycle and, if so,
-     * finds such a cycle.
-     * @param digraph the digraph
+     * Constructs the object.
+     *
+     * @param      g     { parameter_description }.
      */
-    public DirectedCycle(final Digraph digraph) {
-        marked  = new boolean[digraph.V()];
-        onStack = new boolean[digraph.V()];
-        edgeTo  = new int[digraph.V()];
-        for (int v = 0; v < digraph.V(); v++) {
+    DirectedCycle(final Digraph g) {
+        marked  = new boolean[g.V()];
+        onStack = new boolean[g.V()];
+        edgeTo  = new int[g.V()];
+        for (int v = 0; v < g.V(); v++) {
             if (!marked[v] && cycle == null) {
-                dfs(digraph, v);
+                dfs(g, v);
             }
         }
     }
-
     /**
-     * {check that algorithm computes
-     * either the topological order or finds a directed cycle}.
+     * { function_description }.
      *
-     * @param      digraph     {Digraph}
-     * @param      v     {Source Vertex}
+     * @param      g     { parameter_description }.
+     * @param      v     { parameter_description }.
      */
-    private void dfs(final Digraph digraph, final int v) {
+    private void dfs(final Digraph g, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : digraph.adj(v)) {
+        for (int w : g.adj(v)) {
+
             // short circuit if directed cycle found
             if (cycle != null) {
                 return;
-                // found new vertex, so recur
             } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(digraph, w);
-                // trace back directed cycle
+                dfs(g, w);
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
@@ -69,29 +64,28 @@ public class DirectedCycle {
     }
 
     /**
-     * Does the digraph have a directed cycle?
-     * @return {@code true} if the digraph has a directed cycle,
-     * {@code false} otherwise
+     * Determines if it has cycle.
+     *
+     * @return     True if has cycle, False otherwise.
      */
     public boolean hasCycle() {
-        return cycle != null;
+        if (cycle != null) {
+            return true;
+        }
+        return false;
     }
-
     /**
-     * Returns a directed cycle if the digraph has a
-     * directed cycle, and {@code null} otherwise.
-     * @return a directed cycle (as an iterable) if the digraph
-     * has a directed cycle,
-     * and {@code null} otherwise
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Integer> cycle() {
         return cycle;
     }
-
     /**
-     * {certify that digraph has a directed cycle if it reports one}.
+     * { function_description }.
      *
-     * @return     {Boolean}
+     * @return     { description_of_the_return_value }.
      */
     private boolean check() {
         if (hasCycle()) {
@@ -104,8 +98,8 @@ public class DirectedCycle {
                 last = v;
             }
             if (first != last) {
-                System.out.println(
-                    "cycle begins with %d and ends with %d\n" + first + last);
+                System.out.println("cycle begins with %d and ends with %d\n"
+                                   + first + last);
                 return false;
             }
         }
