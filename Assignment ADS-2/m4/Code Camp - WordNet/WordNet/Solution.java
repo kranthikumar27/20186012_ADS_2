@@ -28,14 +28,17 @@ public final class Solution {
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            //wordNet.display();
         }
         try {
             if (implementationType.equals("Queries")) {
                 while (!scan.isEmpty()) {
                     String[] queryNames =
                         scan.readLine().split(" ");
+                    //for (int i = 0; i < queryNames.length; i++) {
                     if (queryNames[0].equals("null")) {
                         throw new Exception("IllegalArgumentException");
+                        //return;
                     }
                     WordNet wordNetObject = new WordNet(synsetFileName,
                                                         hypernymFileName);
@@ -50,6 +53,7 @@ public final class Solution {
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            //wordNet.display();
         }
 
     }

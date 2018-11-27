@@ -120,6 +120,7 @@ public class WordNet {
         }
         int id = sapObj.ancestor(noun1, noun2);
         return synsetsList.get(id);
+        //return "";
     }
 
     public void display() {
@@ -142,4 +143,7 @@ public class WordNet {
                 System.out.println(digraphObj);
             }
     }
+
+    // // do unit testing of this class
+    // public static void main(String[] args)
 }
